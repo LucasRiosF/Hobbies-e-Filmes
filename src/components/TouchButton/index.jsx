@@ -8,14 +8,12 @@ const TouchButton = ({ route, name }) => {
   const navigation = useNavigation();
 
   return (
-    <View>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate(route)}
       >
         <Title title={name} />
       </TouchableOpacity>
-    </View>
   );
 };
 
